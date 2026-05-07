@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>会社概要 | 株式会社山本造園土木 | 造園・土木工事（栃木県下野市）</title><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1D4022;--green-l:#2A5C30;--green-d:#122B16;
+  --vermilion:#C0392B;--vermilion-l:#E74C3C;
+  --gold:#8B7336;--gold-l:#A08840;
+  --black:#0A0A0A;--charcoal:#1A1A1A;--iron:#2C2C2C;
+  --silver:#7A7A7A;--silver-l:#B0B0B0;--silver-p:#E0E0E0;
+  --white:#FFFFFF;--light:#F5F3EF;--warm:#FDFBF7;
+  --border:rgba(29,64,34,0.18);
+}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif;color:var(--charcoal);background:var(--white);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+#site-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,0.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(29,64,34,0.4);height:72px;display:flex;align-items:center}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 24px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{display:flex;flex-direction:column;line-height:1;text-decoration:none;gap:3px}
+.logo-en{font-family:"Oswald",sans-serif;font-size:17px;font-weight:700;color:#4A8C4F;letter-spacing:.12em}
+.logo-ja{font-size:10px;color:rgba(255,255,255,0.5);letter-spacing:.16em}
+.logo-bar{width:28px;height:2px;background:var(--vermilion);margin-top:3px}
+nav.pc-nav{display:flex;gap:2px}
+nav.pc-nav a{font-size:12px;color:rgba(255,255,255,0.65);padding:8px 11px;border-radius:2px;letter-spacing:.05em;transition:color .2s,background .2s;white-space:nowrap}
+nav.pc-nav a:hover,nav.pc-nav a.active{color:#7DC47F;background:rgba(29,64,34,0.25)}
+.header-cta{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.header-tel{font-family:"Oswald",sans-serif;font-size:17px;color:var(--white);letter-spacing:.06em;line-height:1}
+.header-tel span{font-size:10px;font-family:"Noto Sans JP",sans-serif;display:block;color:rgba(255,255,255,0.4);letter-spacing:.1em;margin-bottom:2px}
+.btn-primary{background:var(--vermilion);color:var(--white);font-size:11px;font-weight:700;padding:9px 18px;border-radius:2px;letter-spacing:.1em;transition:background .2s;white-space:nowrap}
+.btn-primary:hover{background:var(--vermilion-l)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--white);transition:.3s}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;top:72px;left:0;right:0;bottom:0;background:rgba(10,10,10,0.99);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-size:18px;color:var(--white);letter-spacing:.12em;transition:color .2s}
+.mobile-nav a:hover{color:#7DC47F}
+.page-hero{margin-top:72px;background:linear-gradient(135deg,var(--charcoal) 0%,#0e1e10 100%);padding:80px 24px;position:relative;overflow:hidden}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(74,140,79,0.1) 1px,transparent 1px);background-size:32px 32px}
+.page-hero-inner{max-width:1160px;margin:0 auto;position:relative}
+.page-hero-label{font-family:"Oswald",sans-serif;font-size:11px;letter-spacing:.3em;color:#9FD4A1;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.page-hero-label::before{content:"";display:block;width:24px;height:1px;background:#9FD4A1}
+.page-hero h1{font-family:"Noto Serif JP",serif;font-size:clamp(26px,4vw,46px);color:var(--white);font-weight:700;margin-bottom:12px}
+.page-hero-sub{font-size:14px;color:rgba(255,255,255,0.55)}
+.breadcrumb{margin-top:24px;display:flex;gap:8px;align-items:center}
+.breadcrumb a,.breadcrumb span{font-size:12px;color:rgba(255,255,255,0.35);letter-spacing:.05em;transition:color .2s}
+.breadcrumb a:hover{color:#9FD4A1}
+.breadcrumb .sep{color:rgba(255,255,255,0.18)}
+.section{padding:88px 24px}
+.section-inner{max-width:1160px;margin:0 auto}
+.section-label{font-family:"Oswald",sans-serif;font-size:11px;letter-spacing:.28em;color:var(--vermilion);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.section-label::before{content:"";display:block;width:28px;height:1px;background:var(--vermilion)}
+.section-title{font-family:"Noto Serif JP",serif;font-size:clamp(22px,3vw,36px);color:var(--charcoal);font-weight:700;margin-bottom:12px;line-height:1.35}
+.section-title .en{font-family:"Oswald",sans-serif;font-size:12px;letter-spacing:.2em;color:var(--silver);display:block;margin-top:6px;font-weight:400}
+.section-desc{font-size:14px;color:var(--silver);line-height:1.9;max-width:540px;margin-bottom:48px}
+.cta-band{background:var(--green-d);padding:72px 24px;text-align:center;border-top:1px solid rgba(29,64,34,0.4)}
+.cta-band-title{font-family:"Noto Serif JP",serif;font-size:clamp(20px,2.5vw,30px);color:var(--white);font-weight:700;margin-bottom:12px}
+.cta-band-sub{font-size:14px;color:rgba(255,255,255,0.5);margin-bottom:32px;line-height:1.8}
+.cta-band-tel{font-family:"Oswald",sans-serif;font-size:clamp(30px,4vw,48px);color:var(--white);margin-bottom:8px}
+.cta-band-tel a{color:var(--white)}
+.cta-band-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-gold{background:var(--vermilion);color:var(--white);font-size:13px;font-weight:700;padding:14px 36px;border-radius:2px;letter-spacing:.1em;transition:background .2s}
+.btn-gold:hover{background:var(--vermilion-l)}
+.btn-outline-w{border:1px solid rgba(255,255,255,0.4);color:var(--white);font-size:13px;padding:13px 36px;border-radius:2px;letter-spacing:.1em;transition:border-color .2s,background .2s}
+.btn-outline-w:hover{border-color:#9FD4A1;background:rgba(29,64,34,0.2)}
+footer{background:var(--charcoal);padding:64px 24px 0;border-top:1px solid rgba(29,64,34,0.3)}
+.footer-inner{max-width:1160px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer-logo-en{font-family:"Oswald",sans-serif;font-size:18px;font-weight:700;color:#7DC47F;letter-spacing:.14em;margin-bottom:4px}
+.footer-logo-ja{font-size:11px;color:rgba(255,255,255,.4);letter-spacing:.14em;margin-bottom:16px}
+.footer-desc{font-size:13px;color:var(--silver);line-height:1.9;margin-bottom:16px}
+.footer-address{font-size:12px;color:var(--silver);line-height:2;font-style:normal}
+.footer-col-title{font-family:"Oswald",sans-serif;font-size:11px;letter-spacing:.2em;color:#9FD4A1;margin-bottom:16px;padding-bottom:8px;border-bottom:1px solid rgba(29,64,34,0.3)}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:8px}
+.footer-links a{font-size:13px;color:var(--silver);transition:color .2s;letter-spacing:.04em}
+.footer-links a:hover{color:#9FD4A1}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding:20px 0;display:flex;justify-content:space-between;align-items:center}
+.footer-copy{font-size:11px;color:rgba(255,255,255,.2);letter-spacing:.08em}
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+@media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){nav.pc-nav,.header-cta{display:none}.hamburger{display:flex}.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:8px;text-align:center}.section{padding:64px 20px}}
+
+.co-layout{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start;margin-bottom:88px}
+.co-msg-img{background:var(--light);height:380px;border-radius:2px;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.co-msg-img img{width:100%;height:100%;object-fit:cover}
+.co-msg-label{font-family:"Oswald",sans-serif;font-size:10px;letter-spacing:.3em;color:var(--vermilion);margin-bottom:12px}
+.co-msg-title{font-family:"Noto Serif JP",serif;font-size:clamp(22px,2.5vw,30px);font-weight:700;color:var(--charcoal);line-height:1.4;margin-bottom:24px}
+.co-msg-text{font-size:14px;color:var(--silver);line-height:2;margin-bottom:16px}
+.co-msg-sign{font-family:"Noto Serif JP",serif;font-size:16px;color:var(--charcoal);margin-top:24px;font-weight:700}
+.co-msg-sign span{font-size:13px;font-family:"Noto Sans JP",sans-serif;color:var(--silver);font-weight:400;margin-left:8px}
+.co-table-wrap{background:var(--warm);border:1px solid var(--border);border-radius:2px;overflow:hidden}
+.co-table{width:100%;border-collapse:collapse}
+.co-table tr{border-bottom:1px solid var(--border)}
+.co-table tr:last-child{border-bottom:none}
+.co-table th{font-size:12px;font-weight:700;color:var(--charcoal);background:rgba(29,64,34,0.06);padding:16px 20px;width:160px;text-align:left;letter-spacing:.04em;vertical-align:top}
+.co-table td{font-size:13px;color:var(--silver);padding:16px 20px;line-height:1.8;vertical-align:top}
+.map-placeholder{width:100%;height:360px;background:var(--light);border:1px solid var(--border);border-radius:2px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px}
+.map-placeholder span{font-size:13px;color:var(--silver);letter-spacing:.04em}
+@media(max-width:768px){.co-layout{grid-template-columns:1fr;gap:40px}}
+</style></head><body><header id="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo"><span class="logo-en">YAMAMOTO ZOUEN DOBOKU</span><span class="logo-ja">株式会社山本造園土木</span><span class="logo-bar"></span></a>
+    <nav class="pc-nav">
+      <a href="service.html">施工案内</a><a href="works.html">施工実績</a><a href="company.html">会社概要</a><a href="recruit.html">採用情報</a><a href="recruit_story.html">求職者のみなさまへ</a><a href="contact.html">お問い合わせ</a>
+    </nav>
+    <div class="header-cta"><a href="tel:0285440605" class="header-tel"><span>お電話でのご相談</span>0285-44-0605</a><a href="contact.html" class="btn-primary">無料相談</a></div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMenu()">トップ</a><a href="service.html" onclick="closeMenu()">施工案内</a><a href="works.html" onclick="closeMenu()">施工実績</a><a href="company.html" onclick="closeMenu()">会社概要</a><a href="recruit.html" onclick="closeMenu()">採用情報</a><a href="recruit_story.html" onclick="closeMenu()">求職者のみなさまへ</a><a href="contact.html" onclick="closeMenu()">お問い合わせ</a>
+</nav><div class="page-hero"><div class="page-hero-inner"><div class="page-hero-label">COMPANY</div><h1>会社概要</h1><p class="page-hero-sub">昭和38年創業。栃木県下野市で60年以上、地域の緑を守り続けています。</p><div class="breadcrumb"><a href="index.html">TOP</a><span class="sep">›</span><span>会社概要</span></div></div></div><section class="section">
+  <div class="section-inner">
+    <div class="section-label fade-up">MESSAGE</div>
+    <h2 class="section-title fade-up">代表メッセージ<span class="en">PRESIDENT'S MESSAGE</span></h2>
+    <div class="co-layout fade-up">
+      <div>
+        <div class="co-msg-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop" alt="代表メッセージ"></div>
+      </div>
+      <div>
+        <div class="co-msg-label">PRESIDENT'S MESSAGE</div>
+        <div class="co-msg-title">緑の力で、地域に<br>豊かさと安らぎを。</div>
+        <p class="co-msg-text">弊社は昭和38年の創業以来、栃木県下野市を拠点に造園工事・土木工事を手がけてまいりました。公共工事から個人邸の庭園まで、60年以上にわたり地域の皆様に支えていただきながら、着実に実績を積み重ねてきました。</p>
+        <p class="co-msg-text">緑は人々の暮らしに癒しと安らぎをもたらし、地域の景観を彩ります。私たちは単に工事を行うだけでなく、完成後の長期管理まで責任を持って携わることで、お客様との永続的なお付き合いを大切にしています。</p>
+        <p class="co-msg-text">これからも地域に根ざした造園・土木の専門会社として、皆様の豊かな暮らしづくりに貢献してまいります。</p>
+        <div class="co-msg-sign">山本 幸雄<span>代表取締役</span></div>
+      </div>
+    </div>
+    <div class="section-label fade-up">PROFILE</div>
+    <h2 class="section-title fade-up" style="margin-bottom:32px">会社概要<span class="en">COMPANY PROFILE</span></h2>
+    <div class="co-table-wrap fade-up">
+      <table class="co-table">
+        <tr><th>会社名</th><td>株式会社山本造園土木</td></tr>
+        <tr><th>代表者</th><td>山本 幸雄</td></tr>
+        <tr><th>所在地</th><td>〒329-0433 栃木県下野市緑２－９－１</td></tr>
+        <tr><th>電話番号</th><td><a href="tel:0285440605" style="color:var(--green)">0285-44-0605</a></td></tr>
+        <tr><th>創業</th><td>昭和38年（1963年）</td></tr>
+        <tr><th>事業内容</th><td>造園工事業・土木工事業・舗装工事業・管工事業・水道施設工事業・とび・土工工事業</td></tr>
+        <tr><th>建設業許可</th><td>造園工事業 ／ 土木工事業 ／ 舗装工事業 ／ 管工事業 ／ 水道施設工事業 ／ とび・土工工事業</td></tr>
+        <tr><th>対応エリア</th><td>栃木県内全域（下野市・小山市・宇都宮市・栃木市 他）</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+<section class="section" style="background:var(--light);padding-top:0">
+  <div class="section-inner">
+    <div class="section-label fade-up">ACCESS</div>
+    <h2 class="section-title fade-up">アクセス<span class="en">ACCESS MAP</span></h2>
+    <p class="section-desc fade-up">JR水戸線 小金井駅より車で約5分。</p>
+    <div class="map-placeholder fade-up">
+      <span>📍 栃木県下野市緑２－９－１</span>
+      <span style="font-size:11px;color:var(--silver-l)">Google Maps プレースホルダー（実装時に埋め込みコードを挿入）</span>
+    </div>
+  </div>
+</section>
+<div class="cta-band">
+  <div class="cta-band-title">まずはお気軽にご相談ください</div>
+  <p class="cta-band-sub">お見積りは無料です。お電話またはメールにてご連絡ください。</p>
+  <div class="cta-band-tel"><a href="tel:0285440605">0285-44-0605</a></div>
+  <div class="cta-band-btns" style="margin-top:24px"><a href="contact.html" class="btn-gold">メールで相談する</a></div>
+</div><footer><div class="footer-inner"><div class="footer-grid"><div><div class="footer-logo-en">YAMAMOTO ZOUEN DOBOKU</div><div class="footer-logo-ja">株式会社山本造園土木</div><p class="footer-desc">昭和38年創業。栃木県下野市を拠点に公共・民間の造園工事・土木工事を手がけています。</p><address class="footer-address">〒329-0433 栃木県下野市緑２－９－１<br>TEL: <a href="tel:0285440605" style="color:inherit">0285-44-0605</a></address></div><div><div class="footer-col-title">SERVICES</div><ul class="footer-links"><li><a href="service.html">造園工事</a></li><li><a href="service.html">剪定・緑地管理</a></li><li><a href="service.html">土木・舗装工事</a></li><li><a href="service.html">公園・広場整備</a></li><li><a href="service.html">水道・管工事</a></li></ul></div><div><div class="footer-col-title">PAGES</div><ul class="footer-links"><li><a href="service.html">施工案内</a></li><li><a href="works.html">施工実績</a></li><li><a href="company.html">会社概要</a></li><li><a href="recruit.html">採用情報</a></li><li><a href="recruit_story.html">求職者のみなさまへ</a></li><li><a href="contact.html">お問い合わせ</a></li></ul></div></div><div class="footer-bottom"><p class="footer-copy">© 2024 株式会社山本造園土木 All Rights Reserved.</p><p class="footer-copy">栃木県下野市緑２－９－１</p></div></div></footer><script>
+const ham=document.getElementById('hamburger');const mNav=document.getElementById('mobileNav');
+ham.addEventListener('click',()=>{ham.classList.toggle('open');mNav.classList.toggle('open');document.body.style.overflow=mNav.classList.contains('open')?'hidden':''});
+function closeMenu(){ham.classList.remove('open');mNav.classList.remove('open');document.body.style.overflow=''}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{document.getElementById('site-header').style.background=window.scrollY>60?'rgba(10,10,10,0.99)':'rgba(10,10,10,0.96)'});
+</script></body></html>
