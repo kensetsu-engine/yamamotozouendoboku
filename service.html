@@ -259,5 +259,17 @@ const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.targ
 document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
 window.addEventListener('scroll',()=>{document.getElementById('site-header').style.background=window.scrollY>60?'rgba(10,10,10,0.99)':'rgba(10,10,10,0.96)'});
 </script>
+    <!-- ▼ じーむれす トラッキング ▼ -->
+<script>
+(function() {
+  var GAS_URL = 'https://script.google.com/macros/s/AKfycbzyUvFEYZkfys3-nULKCwA1SRK9VzZ3bXFowaylJMnmuNNzChw7gOBxpSDc8NGGtMazZg/exec';
+  var CLIENT_ID = '3';
+  var ua = navigator.userAgent.toLowerCase();
+  var device = /iphone|android.*mobile/.test(ua) ? 'スマホ' : /ipad/.test(ua) ? 'タブレット' : 'PC';
+  var params = '?id=' + CLIENT_ID + '&mode=track&device=' + encodeURIComponent(device);
+  fetch(GAS_URL + params, { mode: 'no-cors' }).catch(function(){});
+})();
+</script>
+<!-- ▲ じーむれす トラッキング ▲ -->
 </body>
 </html>
